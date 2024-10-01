@@ -41,41 +41,43 @@
         </section>
         <section class="section" id="headerSection2">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h1 class="heading text-capitalize text-center text-md-start">restaurant</h1>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="drop-down div d-lg-none">
-                            <div class="dropdown text-center text-sm-end">
-                                <button
-                                class="btn dropdown-btn dropdown-toggle"
-                                type="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                                >Select Tab</button>
-                                <ul class="dropdown-menu text-uppercase">
-                                    <li>
-                                        <a href="#" class="dropdown-item">about</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">events</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">menu</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">contacts</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dropdown-item">blog</a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1 class="heading text-capitalize text-center text-md-start">restaurant</h1>
+                </div>
+                <div class="col-lg-8">
+                    <!-- drop down will be on larger device -->
+                    <div class="drop-down div d-lg-none">
+                        <div class="dropdown text-center text-sm-end">
+                            <button
+                            class="btn dropdown-btn dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            >Select Tab</button>
+                            <ul class="dropdown-menu text-uppercase">
+                                <li>
+                                    <a href="#" class="dropdown-item">about</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">events</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">menu</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">gallery</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">contacts</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">blog</a>
+                                </li>
+                            </ul>
                         </div>
+                        </div>
+                        <!-- nav will be hidden on small device -->
                         <nav class="nav d-none d-lg-flex main-nav justify-content-lg-end" id="mainNav">
                             <a href="#" class="nav-link main-nav-link text-uppercase">about</a>
                             <a href="#" class="nav-link main-nav-link text-uppercase">events</a>
@@ -110,7 +112,46 @@
         </section>
     </header>
     <!-- main -->
-    <main class="main" id="main"></main>
+    <main class="main" id="main">
+        <section class="section" id="carouselSection">
+        <div class="container">
+            <!-- carousel -->
+                <div class="carousel slide" id="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-current="true" aria-label="slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="slide 3"></button>            
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid image d-block w-100">
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        </section>
+        <section class="section" id="figureSection">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- footer -->
     <footer class="footer" id="footer"></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
