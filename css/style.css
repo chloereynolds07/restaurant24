@@ -1,0 +1,172 @@
+:root {
+    --red: #df473a;
+    --yellow: #fff8ce;
+    --bg1: #f5eedc;
+    --bg2: #f9f5ea;
+    --gray1: #66635e;
+    --gray2: #5c5954;
+    --gray3: #413e39;
+    --green: #999e03;
+    --textColor: #762921;
+    --font1: 'PT Sans', sans-serif;
+    --font2: 'Open Sans', sans-serif;
+    --client1: 'Caveat', cursive;
+    --client2: 'Courier Prime', monospace;
+    --client3: 'Oooh Baby', cursive;
+    --client4: 'Qwitcher Grypen', cursive;
+    --grad: linear-gradient(#f86659, var(--red));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+    scroll-behavior: smooth;
+}
+
+* {box-sizing: border-box;}
+
+#headerSection1 {
+    background-color: var(--red);
+}
+
+.social-link {
+    color: var(--yellow);
+}
+
+#headerSection2 {
+    padding: 20px 0;
+    background-color: var(--red);
+    background-image: var(--grad);
+}
+
+.main-nav-link {
+    color: var(--yellow);
+}
+
+.main-nav-link:hover {
+    color: #000;
+    background-color: var(--yellow);
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+#carouselSection {
+    background-image: url(../images/food4.jpg);
+    width: 100%;
+    position: relative;
+}
+
+/* .tint {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    /* background-color: #000;
+    /* opacity: 0.55;
+} */
+
+#headerSection3 {
+    padding: 10px 0;
+    background-color: var(--yellow);
+}
+
+.blurb {
+    font-size: 1.7rem;
+    color: var(--textColor);
+    font-weight: 200;
+}
+
+#figureSection {
+    padding: 32px 0;
+    background-color: var(--bg1);
+}
+
+.my-figure {
+    background-color: #fff;
+    box-shadow: 0 5px 5px #aaa;
+}
+
+.figure-heading {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#footerSection1 {
+    padding: 32px 0;
+    background-color: var(--bg2);
+}
+
+.fs1-heading {
+    color: var(--textColor);
+}
+
+.fs1-subheading {
+    color: var(--green);
+}
+
+.icons {
+    font-size: 1.5rem;
+    color: var(--green)
+}
+
+.small-text {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.fs1-text {
+    font-size: 15px;
+    color: var(--gray1);
+    padding: 18px 0;
+}
+
+#footerSection2 {
+    padding: 32px 0;
+    color: var(--yellow);
+    background-color: var(--gray1);
+}
+
+#client1 {
+    font-family: var(--client1);
+}
+
+#client2 {
+    font-family: var(--client2);
+}
+
+#client3 {
+    font-family: var(--client3);
+}
+
+#client4 {
+    font-family: var(--client4);
+}
+
+#client5 {
+    font-family: var(--client1);
+}
+
+#footerSection3 {
+    padding: 32px 0;
+    background-color: var(--gray2);
+}
+
+.fs3-heading {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.fs3-list li, .fs3-text {
+    color: #aaa;
+}
+
+#footerSection4 {
+    background-color: var(--gray3);
+    padding: 32px 0;
+}
+
+.footer-logo {
+    font-weight: 700;
+}
