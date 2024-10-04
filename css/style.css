@@ -170,3 +170,21 @@ body {
 .footer-logo {
     font-weight: 700;
 }
+
+/* about section */
+
+#aboutSection {
+    background-color: var(--bg1);
+    padding: 40px 0;
+}
+
+.about-div {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 3px 3px #aaa;
+}
+
+.banner-img {
+    height: 45vh;
+}
+
