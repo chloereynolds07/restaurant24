@@ -188,3 +188,14 @@ body {
     height: 45vh;
 }
 
+
+/* menu section */
+
+#menuBtn, #confirmBtn {
+    color: var(--yellow);
+}
+
+#menuBtn:hover, #confirmBtn:hover {
+    color: #000;
+    background-color: var(--yellow);
+}

@@ -60,7 +60,7 @@
                             >Select Tab</button>
                             <ul class="dropdown-menu text-uppercase">
                                 <li>
-                                    <a href="#" class="dropdown-item">about</a>
+                                    <a href="about.html" class="dropdown-item">about</a>
                                 </li>
                                 <li>
                                     <a href="#" class="dropdown-item">events</a>
@@ -82,7 +82,7 @@
                         </div>
                         <!-- nav will be hidden on small device -->
                         <nav class="nav d-none d-lg-flex main-nav justify-content-lg-end" id="mainNav">
-                            <a href="#" class="nav-link main-nav-link text-uppercase">about</a>
+                            <a href="about.html" class="nav-link main-nav-link text-uppercase">about</a>
                             <a href="#" class="nav-link main-nav-link text-uppercase">events</a>
                             <a href="#" class="nav-link main-nav-link text-uppercase">menu</a>
                             <a href="#" class="nav-link main-nav-link text-uppercase">gallery</a>
@@ -100,7 +100,7 @@
                         <p class="blurb text-center text-md-start fst-italic">Top quality ingredients only in our kitchen!</p>
                     </div>
                     <div class="col-md-3 offset-md-6">
-                        <form action="#" class="form search-form">
+                        <!-- <form action="#" class="form search-form">
                             <div class="input-group">
                                 <input type="search" class="form-control" />
                                 <label class="input-group-text">
@@ -108,48 +108,107 @@
                                     <span class="visually-hidden">search</span>
                                 </label>
                             </div>
-                        </form>
+                        </form> -->
+                        <button type="button" class="btn cart-btn btn-danger" id="cartBtn">
+                            <span id="cartItems">0</span> item(s) - $<span id="cartSubtotal">0.00</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
     </header>
-    <!-- main content-->
-    <main class="main" id="main">
-        <section class="section" id="bannerSection">
-            <div class="container-fluid">
-                <img src="/images/food4.jpg" alt="A toasted sandwich with lettuce, grilled meat, tomatoes, and a white sauce" class="img-fluid banner-img w-100">
-            </div>
-        </section>
-        <section class="section" id="aboutSection">
+
+<!-- main -->
+    <main class="main menu-main" id="main">
+        <!-- menu section -->
+        <section class="section menu-section" id="menuSection">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="about-div">
-                            <h2 class="about-heading text-danger text-uppercase fw-bold pb-3">about</h2>
-                            <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam alias eos, adipisci at ducimus ullam vitae error perspiciatis repellat, maxime dolores? Laudantium incidunt deserunt eveniet dolorem! Perferendis nulla deleniti nam tempora laudantium a, nemo iure minima impedit, sequi magnam minus modi adipisci explicabo placeat perspiciatis eligendi laboriosam repellendus velit. Commodi accusantium mollitia saepe libero dignissimos ipsum eum cum quo dolores voluptatem ea quam quas dolore distinctio modi, error nam! Corrupti, eveniet? </p>
-                            <p class="about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi laborum animi dolores, et quo veritatis similique, ducimus quidem dolorem nihil laudantium tenetur vitae voluptates non minus corrupti numquam magnam ipsa at voluptate harum illo exercitationem.</p>
-                            <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, incidunt sequi accusamus porro veniam blanditiis, natus magni, dolorum voluptates praesentium quae doloremque asperiores beatae. Hic reprehenderit deleniti amet vero vel ut laudantium reiciendis facilis dolorum pariatur perferendis in, qui perspiciatis officia fuga est, ex aspernatur iure voluptatem, aliquid aliquam provident dolore temporibus! Aut cum, alias odio deserunt tempore hic beatae esse dicta magnam corporis placeat eaque excepturi quos amet necessitatibus saepe vitae ad suscipit.</p>
-                            <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero voluptatem animi ratione quis dolorem esse distinctio suscipit commodi dignissimos architecto, quo doloremque aliquid alias laborum dicta quidem, deleniti itaque consequuntur dolore autem est. Laborum, voluptatum porro sint totam ut ea nostrum quod eius? Nihil possimus, earum nemo excepturi architecto dolores!</p>
-                        </div>
+                    <div class="col">
+                        <h2 class="menu-header text-capitalize">our menu</h2>
+                        <p class="menu-slogan text-capitalize">all items are made to order. we don't own a microwave</p>
                     </div>
-                    <div class="col-md-4">
-                        <figure class="figure my-figure">
-                            <img src="images/img3.jpg" alt="an older man wearing a chef hat and jacket smiling" class="img-fluid w-100 figure-img"/>
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">employment</h2>
-                            <figcaption class="figure-caption ps-4">Lorem ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                        <figure class="figure my-figure">
-                            <img src="images/img6.jpg" alt="a plate which has springrolls and jalapenos" class="img-fluid w-100 figure-img"/>
-                            <h2 class="figure-heading text-danger text-uppercase ps-4">fresh ideas</h2>
-                            <figcaption class="figure-caption ps-4">Lorem ipsum dolor sit amet consectetur adipisicing.</figcaption>
-                        </figure>
-                    </div>
+                </div>
+                <div class="row-cols-1 row-cols-md-3 row-cols-lg-4" id="itemDiv">
+                    <div class="col">
+                        <!-- <figure class="figure item-figure">
+                            <img src="https://via.placeholder.com/150x90" alt="placeholder img" class="img-fluid image item-image figure-img">
+                            <figcaption class="figure-caption item-caption">
+                                <span class="item-price" id="itemPrice">10.00</span>
+                            </figcaption>
+                            <p class="item-desc" id="itemDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <button class="btn menu-btn btn-danger text-capitalize" id="menuBtn">add to cart</button>
+                        </figure> -->
+                    </div> 
                 </div>
             </div>
         </section>
+        <section class="section checkout-page d-none" id="checkoutPage">
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="bar-text">
+                                <span class="home-switch">Menu</span> &gt; Checkout
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section checkout-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">checkout</h2>
+                            <p class="checkout-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni sapiente quos facere.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkout-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table" id="table">
+                                <tr class="table-headers">
+                                    <td>item</td>
+                                    <td>price</td>
+                                    <td>quanity</td>
+                                    <td>subtotal</td>
+                                </tr>
+                                <!-- load items -->
+                                <tbody id="tbody"></tbody>
+                                <tr class="totals" id="totals">
+                                    <td colspan="4">
+                                        <p class="total-subtotal" id="totalSubtotal">Subtotal:</p>
+                                        <p class="total-tax" id="totalTax">Tax:</p>
+                                        <p class="delivery-fee" id="deliveryFee">Delivery Fee:</p>
+                                        <p class="total-total" id="totalTotal"></p>
+                                    </td>
+                                    <td class="total-value" id="totalValues">
+                                        <p class="subtotal-value" id="subtotalValue">0.00</p>
+                                        <p class="tax-value" id="taxValue">0.00</p>
+                                        <p class="delivery-fee-value" id="deliveryValue">0.00</p>
+                                        <p class="total-value">$
+                                            <span id="totalValue"></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn confirm-btn text-capitalize btn-danger" id="confirmBtn">confirm order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </main>
-    <!-- footer section-->
+
+<!-- footer -->
     <footer class="footer" id="footer">
         <section class="section" id="footerSection1">
             <div class="container">
@@ -265,6 +324,9 @@
             </div>
         </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
